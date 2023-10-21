@@ -11,17 +11,15 @@ async function handleStripePaymentAction() {
 		});
 		}
 		function handleExternalMessage(event: MessageEvent) {
-			// Check the origin of the message
 			if (event.origin !== 'https://example.com') {
 				return;
 			}
 
-			// Handle the message data
+			
 			const data = event.data;
 			console.log('Received message:', data);
 		}
 
-		// Listen for messages from the external page
 		window.addEventListener('message', handleExternalMessage);
 	
 export default function Home() {
