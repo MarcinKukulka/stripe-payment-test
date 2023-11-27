@@ -17,6 +17,9 @@ dependencies:
   stripe:
     specifier: ^14.1.0
     version: 14.1.0
+  stripe-event-types:
+    specifier: ^3.1.0
+    version: 3.1.0(stripe@14.1.0)
 
 devDependencies:
   '@types/node':
@@ -2302,6 +2305,14 @@ packages:
     resolution: {integrity: sha512-6fPc+R4ihwqP6N/aIv2f1gMH8lOVtWQHoqC4yK6oSDVVocumAsfCqjkXnqiYMhmMwS/mEHLp7Vehlt3ql6lEig==}
     engines: {node: '>=8'}
     dev: true
+
+  /stripe-event-types@3.1.0(stripe@14.1.0):
+    resolution: {integrity: sha512-jhPNX5FL81QiBFadek3h+PBQKU5Xg3NURTia6tzyqieDStESbvKqOhnA29ECdA1lPB8KSB5/xdK20k6Q1yOejQ==}
+    peerDependencies:
+      stripe: '>=10.0.0'
+    dependencies:
+      stripe: 14.1.0
+    dev: false
 
   /stripe@14.1.0:
     resolution: {integrity: sha512-hpI8OT7jbaVTGOm9bqeCbdVGwM/55Hetn+WpPGFSq7FmlnqLPB7CSZy2eNYU6ko+4tdur6ZMrDKS6wh1CCx8bw==}
