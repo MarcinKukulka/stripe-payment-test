@@ -1,4 +1,5 @@
 import Stripe from 'stripe';
+
 async function handleStripePaymentAction() {
 	'use server';
 	if (!process.env.STRIPE_SECRET_KEY) {
@@ -10,16 +11,10 @@ async function handleStripePaymentAction() {
 		typescript: true,
 	});
 }
-function handleExternalMessage(event: MessageEvent) {
-	if (event.origin !== 'https://example.com') {
-		return;
-	}
 
-	const data = event.data;
-	console.log('Received message:', data);
-}
 
-window.addEventListener('message', handleExternalMessage);
+
+
 
 export default function Home() {
 	return (
@@ -38,3 +33,4 @@ export default function Home() {
 		</main>
 	);
 }
+
