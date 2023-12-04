@@ -15,8 +15,16 @@ dependencies:
     specifier: ^18.2.0
     version: 18.2.0(react@18.2.0)
   stripe:
+<<<<<<< HEAD
     specifier: ^14.7.0
     version: 14.7.0
+=======
+    specifier: ^14.1.0
+    version: 14.1.0
+  stripe-event-types:
+    specifier: ^3.1.0
+    version: 3.1.0(stripe@14.1.0)
+>>>>>>> 1ff0ee792a95cb728cebbc7906fd86d6d3f1fd0a
 
 devDependencies:
   '@types/node':
@@ -2333,8 +2341,21 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
+<<<<<<< HEAD
   /stripe@14.7.0:
     resolution: {integrity: sha512-A6XWH76K0K7IgEBz4odIVxjhkdPduSPafZju6ltAFU0oMbWJlfeaDyMTfRJ9vcYA9zqENfwRizExD/2nZ4rQ1A==}
+=======
+  /stripe-event-types@3.1.0(stripe@14.1.0):
+    resolution: {integrity: sha512-jhPNX5FL81QiBFadek3h+PBQKU5Xg3NURTia6tzyqieDStESbvKqOhnA29ECdA1lPB8KSB5/xdK20k6Q1yOejQ==}
+    peerDependencies:
+      stripe: '>=10.0.0'
+    dependencies:
+      stripe: 14.1.0
+    dev: false
+
+  /stripe@14.1.0:
+    resolution: {integrity: sha512-hpI8OT7jbaVTGOm9bqeCbdVGwM/55Hetn+WpPGFSq7FmlnqLPB7CSZy2eNYU6ko+4tdur6ZMrDKS6wh1CCx8bw==}
+>>>>>>> 1ff0ee792a95cb728cebbc7906fd86d6d3f1fd0a
     engines: {node: '>=12.*'}
     dependencies:
       '@types/node': 20.10.3
