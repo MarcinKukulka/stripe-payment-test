@@ -1,5 +1,7 @@
 import Stripe from 'stripe';
 
+import { handleRedirectData } from '@/app/api/fetchPaymentData/route';
+
 async function handleStripePaymentAction() {
 	'use server';
 	if (!process.env.STRIPE_SECRET_KEY) {
@@ -12,9 +14,7 @@ async function handleStripePaymentAction() {
 	});
 }
 
-
-
-
+ 
 
 export default function Home() {
 	return (
@@ -27,10 +27,7 @@ export default function Home() {
 					Pay
 				</button>
 			</form>
-			<div className="flex flex-col items-center justify-center min-h-screen py-2">
-				
-			</div>
+			<div className="flex flex-col items-center justify-center min-h-screen py-2"></div>
 		</main>
 	);
 }
-
