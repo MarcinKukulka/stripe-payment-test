@@ -37,9 +37,9 @@ export default function Payment({ params }: { params: { payment: string } }) {
 			mode: 'payment',
 
 			success_url:
-				'http://192.168.50.226:3000/status/success?sessionId={CHECKOUT_SESSION_ID}',
+				'https://stripe-payment-test-marcinkukulka.vercel.app/status/success?sessionId={CHECKOUT_SESSION_ID}',
 			cancel_url:
-				'http://192.168.50.226:3000/status/cancel?sessionId={CHECKOUT_SESSION_ID}',
+				'https://stripe-payment-test-marcinkukulka.vercel.app/status/cancel?sessionId={CHECKOUT_SESSION_ID}',
 		});
 		if (!checkoutSession.url) {
 			throw new Error('Something went wrong with Stripe');
